@@ -4,22 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
-  <link rel="stylesheet" href="./public/output.css">
+  <link rel="stylesheet" href="../../public/output.css">
 </head>
-<body class="flex items-center justify-center h-[100vh] bg-cover bg-centerbackdrop-blur-sm" style="background-image: url(./public/images/bg2.avif);">
+<body class="flex items-center justify-center h-[100vh] bg-cover bg-centerbackdrop-blur-sm" style="background-image: url(../../public/images/bg2.avif);">
   <section class="bg-[#FFFFFFBF] rounded-lg shadow-xl w-[400px] lg:w-[500px] mx-2 min-h-[70%] bg-hero">
-    <h1 class="text-3xl font-bold text-center mb-5 pt-8 w-full">Login</h1>
+    <h1 class="text-3xl font-bold text-center mb-5 pt-8 w-full">Sign Up</h1>
     <p class="text-center text-gray-400 pb-3 border-b-2 w-full">Please login to your account!!</p>
     <form class="flex flex-col gap-2 p-5 px-6" action="" method="">
      <label for="name" class="text-xl font-light block">Username</label>
      <input type="text" class="border-[1px] border-gray-400 focus:border-black h-[45px] px-3 text-xl focus:outline-none rounded-[3px] bg-[#ffffff64]">
+     <label for="email" class="text-xl font-light block">Email</label>
+     <input type="email" class="border-[1px] border-gray-400 focus:border-black h-[45px] px-3 text-xl focus:outline-none rounded-[3px] bg-[#ffffff64]">
      <label for="password" class="text-xl font-light block pt-3">Password</label>
      <input type="password" class="border-[1px] border-gray-400 focus:border-black h-[45px] px-3 text-xl focus:outline-none rounded-[3px] bg-[#ffffff64]">
+     <label for="password" class="text-xl font-light block pt-3">Profile Picture</label>
+     <input type="file" class="">
     </form>
 
     <div class="px-6">
-      <a href="" class="underline text-gray-400 hover:text-black block py-4">Forgot Password?</a>
-      <a href="./src/html/sign-up.html" class="underline text-slate-700 hover:text-black">Don't have an account? Create one now.</a>
+      <a href="../../index.html" class="underline text-slate-700 hover:text-black">Already have an account? Login now.</a>
     </div>
 
   <div class="flex items-center mt-10 mb-3">
