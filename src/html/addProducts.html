@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Products</title>
+    <link rel="stylesheet" href="../../public/output.css" />
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  </head>
+  <body class="flex">
+     <!-- this is the sidebar -->
+     <section
+     class="w-[300px] shadow-md shadow-[#0000007c] py-5  bg-[#1971c2] text-[#ffffffe2] z-10 fixed top-0 bottom-0 lg:relative overflow-y-auto ease-in-out"
+     id="sidebar">
+     <!-- logo -->
+     <div class="border-b-[1px] border-black">
+       <h1 class="text-3xl font-semibold flex items-center justify-around py-5">Laptop Shop<i class="bx bx-x text-4xl  cursor-pointer" id="close"></i>
+       </h1>
+     </div>
+     <!-- sidebar navigation items -->
+     <nav class="">
+       <ul class="w-full flex flex-col justify-between h-full pt-10 gap-10">
+         <li
+           class="flex gap-3 items-center text-xl font-medium w-[100%] mx-auto py-2 px-5"
+         >
+           <i class="bx bxs-dashboard text-3xl"></i>
+           <a href="" class="">Dashboard</a>
+         </li>
+         <li
+           class="flex gap-5 text-xl font-medium w-[100%] mx-auto py-2 items-center px-5"
+         >
+           <i class="bx bx-log-out text-3xl"></i>
+           <a href="./addProducts.html" class="">Add Product</a>
+         </li>
+         <li
+           class="flex gap-5 items-center text-xl font-medium w-[100%] mx-auto py-2 px-5"
+         >
+           <i class="bx bx-detail text-3xl"></i>
+           <a href="./viewProduct.html" class="">View Product</a>
+         </li>
+         <li
+           class="flex gap-5 items-center text-xl font-medium w-[100%] mx-auto py-2 px-5"
+         >
+           <i class="bx bx-detail text-3xl"></i>
+           <a href="./modifyProduct.html" class="">Modify Product</a>
+         </li>
+         <li
+           class="flex gap-5 items-center text-xl font-medium w-[100%] mx-auto py-2 px-5"
+         >
+           <i class="bx bx-book-alt text-3xl"></i>
+           <a href="./makeSale.html" class="">Make a Sale</a>
+         </li>
+         <li class="flex gap-5 text-xl font-medium w-[100%] mx-auto py-2 px-5">
+           <i class="bx bx-detail text-3xl"></i>
+           <a href="./viewSale.html" class="">View Sales</a>
+         </li>
+         <li
+           class="flex gap-3 items-center text-xl font-medium w-[100%] px-5 mx-auto text-center py-2 hover:text-red-400"
+         >
+           <i class="bx bx-log-out text-3xl"></i>
+           <a href="../../index.html" class="">Logout</a>
+         </li>
+       </ul>
+     </nav>
+   </section>
+
+
+    <main class="flex-[2] bg-white w-[100%] h-[100vh] flex flex-col px-3 gap-2">
+      <div
+        class="w-[100%] lg:h-[10vh] flex flex-col lg:flex-row items-center justify-between px-5 shadow-sm shadow-[#00000010]"
+      >
+        <div class="flex items-center gap-10 cursor-pointer">
+          <i class="bx bx-menu-alt-right text-4xl" id="menu"></i>
+          <!-- <i class="bx bx-chevron-right text-4xl lg:hidden" id="open"></i> -->
+          <h1
+            class="text-4xl tracking-wide font-sans font-semibold text-slate-700 py-5"
+          >
+            Anthony
+          </h1>
+        </div>
+
+        <div class="flex flex-col-reverse lg:flex-row gap-5 items-center">
+          <div>
+            <input
+              type="text"
+              placeholder="Search for Something"
+              class="border-[1px] border-slate-400 w-[300px] pl-3 h-[40px] pr-1 rounded-full"
+            />
+          </div>
+          <div class="flex items-center gap-5 justify-around">
+            <i class="bx bxs-moon text-4xl bg-gray-200 p-1 rounded-full"></i>
+            <i class="bx bx-bell text-4xl bg-gray-200 p-1 rounded-full"></i>
+            <a href="">
+              <img
+                src="../../public/images/profile.jpeg"
+                alt=""
+                class="w-[40px] object-contain rounded-full"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- add products section -->
+      <div>
+        <h1 class="text-3xl font-semibold py-5 px-3">Add Products</h1>
+         
+        <!-- add products forms -->
+        <form action="" class="px-3 py-10 flex flex-col lg:flex-row gap-10 lg:gap-20">
+         <div>
+          <label for="pname" class="text-xl block py-4">Products Name</label>
+          <input type="text" class="border-[1px] border-slate-400 w-[320px] lg:w-[500px] h-[45px] focus:outline-none px-5 text-xl rounded-sm" placeholder="Enter the product name here">
+
+          <label for="price" class="text-xl block pb-4 pt-10">Products Price</label>
+          <input type="number" class="border-[1px] border-slate-400 w-[320px] lg:w-[500px] h-[45px] focus:outline-none px-5 text-xl rounded-sm" placeholder="Enter the product price here">
+
+          <label for="qunatity" class="text-xl block pb-4 pt-10">Products Quantity</label>
+          <input type="number" class="border-[1px] border-slate-400 w-[320px] lg:w-[500px] h-[45px] focus:outline-none px-5 text-xl rounded-sm" placeholder="Enter the product quantity here">
+         </div>
+
+         <div>
+          <label for="descripton" class="text-xl block py-4">Products Description</label>
+          <textarea name="description" id="" class="border-[1px] border-slate-400 w-[320px] lg:w-[500px] h-[200px] lg:h-[300px] focus:outline-none px-5 text-xl rounded-sm py-4" placeholder="Enter the description of the product here"></textarea>
+         </div>
+        </form>
+        <button class="bg-blue-500 px-10 py-3 float-right mr-4 text-2xl text-white rounded-sm">Save</button>
+      </div>
+    </main>
+
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>
